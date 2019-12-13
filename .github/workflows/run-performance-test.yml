@@ -19,5 +19,5 @@ jobs:
       run: |
         pip install Cython nimporter
         wget --quiet https://nim-lang.org/download/nim-1.0.4-linux_x64.tar.xz
-        tar -xvf nim-1.0.4-linux_x64.tar.xz
+        tar -xf nim-1.0.4-linux_x64.tar.xz
         ls *
