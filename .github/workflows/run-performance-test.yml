@@ -12,12 +12,14 @@ jobs:
     - uses: actions/setup-python@v1
       with:
         python-version: 3.8
-#   - name: Print info
-#     run: |
-#       uname -a
+    - name: Print info
+      run: |
+        uname -a
+        pwd
     - name: Set up the environment
       run: |
         pip install Cython nimporter
         wget --quiet https://nim-lang.org/download/nim-1.0.4-linux_x64.tar.xz
         tar -xf nim-1.0.4-linux_x64.tar.xz
+        export PATH="/home/runner/nim-1.0.4/bin:$PATH"
         ./nim-1.0.4/bin/nimble install --accept nimpy
