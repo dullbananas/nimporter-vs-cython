@@ -28,4 +28,5 @@ jobs:
     - name: Run the performance test script
       run: |
         python setup.py build_ext --inplace
+        echo "=== RESULTS ==="
         python main.py
