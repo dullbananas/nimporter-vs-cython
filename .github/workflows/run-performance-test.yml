@@ -27,4 +27,4 @@ jobs:
         ./nim-1.0.4/bin/nimble install --accept nimpy
     - name: Run the performance test script
       run: |
-        python 
+        python main.py
