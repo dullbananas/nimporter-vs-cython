@@ -17,6 +17,7 @@ jobs:
         uname -a
         pwd
         env
+        echo $GITHUB_WORKSPACE
     - name: Set up the environment
       run: |
         pip install Cython nimporter
