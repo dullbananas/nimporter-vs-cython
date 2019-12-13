@@ -16,6 +16,6 @@ import nimporter
 import nim_mod
 
 start_time = time.time()
-nim_mod.primes(1000)
+nim_mod.primes()
 elapsed = time.time() - start_time
 print(f'Nimporter took {elapsed} seconds to run')
