@@ -11,7 +11,7 @@ proc primes() {.exportpy.} =
         uwu = true
         for h in 0..len_p:
             i = p[h]
-            if n % i == 0:
+            if n mod i == 0:
                 uwu = false
                 break
         
