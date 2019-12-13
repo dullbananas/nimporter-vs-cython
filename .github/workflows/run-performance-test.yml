@@ -17,13 +17,13 @@ jobs:
         uname -a
         pwd
         env
-        echo $GITHUB_WORKSPACE
+        ls -a
     - name: Set up the environment
       run: |
         pip install Cython nimporter
         wget --quiet https://nim-lang.org/download/nim-1.0.4-linux_x64.tar.xz
         tar -xf nim-1.0.4-linux_x64.tar.xz
-        export PATH="/home/runner/work/nimporter-vs-cython/nimporter-vs-cython/nim-1.0.4/bin:$PATH"
+        export PATH="$GITHUB_WORKSPACE/nim-1.0.4/bin:$PATH"
         ./nim-1.0.4/bin/nimble install --accept nimpy
     - name: Run the performance test script
       run: |
