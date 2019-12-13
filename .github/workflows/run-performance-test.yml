@@ -29,4 +29,5 @@ jobs:
       run: |
         python setup.py build_ext --inplace
         echo "=== RESULTS ==="
+        export PATH="$GITHUB_WORKSPACE/nim-1.0.4/bin:$PATH"
         python main.py
