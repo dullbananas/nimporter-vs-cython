@@ -9,8 +9,11 @@ proc primes() {.exportpy.} =
     n = 2
     while len_p < 1000:
         uwu = true
-        for h in 1..len_p:
+        for h in 0..len_p:
             i = p[h]
+            # prevent 0 division
+            if i == 0:
+                break
             if n mod i == 0:
                 uwu = false
                 break
